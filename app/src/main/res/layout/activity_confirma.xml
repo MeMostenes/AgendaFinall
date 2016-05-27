@@ -28,29 +28,119 @@
         android:layout_marginTop="@dimen/superior"
 
         />
-    <TextView
-        android:id="@+id/tvFecha2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/fecha"
+    <LinearLayout
+        android:id="@+id/lyUno"
         android:layout_below="@+id/tvNombre2"
-        android:layout_marginTop="@dimen/superior"
 
-        />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvFecha2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/superior"
+
+            />
+        <TextView
+            android:id="@+id/tvDFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha"
+
+            android:layout_marginTop="@dimen/superior"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyDos"
+        android:layout_below="@+id/lyUno"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tel"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/superior"
+
+            />
+        <TextView
+            android:id="@+id/tvDTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tel"
+
+            android:layout_marginTop="@dimen/superior"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyTres"
+        android:layout_below="@+id/lyDos"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
     <TextView
-        android:id="@+id/tvDescr"
+        android:id="@+id/tvCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_descr"
-        android:layout_below="@+id/tvFecha2"
+        android:text="@string/correo"
+        android:textStyle="bold"
         android:layout_marginTop="@dimen/superior"
 
         />
+     <TextView
+        android:id="@+id/tvDMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="algoooo"
+
+        android:layout_marginTop="@dimen/superior"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyCuatro"
+        android:layout_below="@+id/lyTres"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvDescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_descr"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/superior"
+
+            />
+        <TextView
+            android:id="@+id/tvDDescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha"
+
+            android:layout_marginTop="@dimen/superior"
+
+            />
+    </LinearLayout>
     <Button
         android:id="@+id/btnEditar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvDescr"
+        android:layout_below="@+id/lyCuatro"
         android:text="@string/text_editar"
         android:layout_marginTop="@dimen/superior"
         />
